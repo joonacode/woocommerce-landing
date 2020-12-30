@@ -1,0 +1,58 @@
+.feature1-addone {
+  bottom: 180px;
+  left: -120px;
+  width: 200px;
+}
+
+.feature1-addtwo {
+  top: 0;
+  left: -80px;
+}
+
+.feature2-fb {
+  top: 60px;
+  left: 40px;
+  width: 80px;
+}
+
+.feature2-square {
+  top: -30px;
+  left: 40px;
+  width: 80px;
+}
+
+.feature2-google {
+  bottom: 180px;
+  left: 100px;
+  width: 80px;
+}
+
+.feature2-mail {
+  top: 20px;
+  right: 30px;
+  width: 80px;
+}
+
+.feature2-jetpack {
+  top: 100px;
+  right: 70px;
+  width: 80px;
+}
+
+.feature3-a1 {
+  top: 85px;
+  right: -50px;
+  width: 130px;
+}
+
+.feature3-a2 {
+  top: -30px;
+  left: 20px;
+  width: 110px;
+}
+
+.feature3-a3 {
+  top: -100px;
+  right: 40px;
+  width: 90px;
+}

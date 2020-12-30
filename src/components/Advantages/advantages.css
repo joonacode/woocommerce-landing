@@ -1,0 +1,43 @@
+.bg-advantages {
+  background-image: url('../../assets/images/bg-advantage.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 940px;
+}
+
+.dot-a-v {
+  bottom: -150px;
+  left: -70px;
+  width: 150px;
+}
+
+.circle-a-s {
+  top: 100px;
+  left: -90px;
+  width: 50px;
+}
+
+.circle-a-b {
+  top: 120px;
+  left: -70px;
+  width: 300px;
+}
+
+.dot-a-h {
+  top: 40px;
+  right: -10px;
+  width: 150px;
+  transform: rotate(90deg);
+}
+
+.circle-a-st {
+  top: -40px;
+  right: 230px;
+  width: 50px;
+}
+
+.circle-a-bt {
+  top: -20px;
+  right: -70px;
+  width: 200px;
+}
