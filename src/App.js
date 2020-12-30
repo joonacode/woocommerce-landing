@@ -10,7 +10,7 @@ import {
 
 function App() {
   return (
-    <div className='text-gray-800'>
+    <div className='text-gray-800 overflow-hidden'>
       <Navbar />
       <Hero />
       <Features />

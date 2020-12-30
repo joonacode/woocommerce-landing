@@ -13,3 +13,19 @@
   top: -30px;
   width: 600px;
 }
+
+@media screen and (max-width: 1024px) {
+  .img-hero {
+    right: -40px;
+    top: -30px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .img-hero {
+    right: -40px;
+    top: 20px;
+    width: 320px;
+  }
+}

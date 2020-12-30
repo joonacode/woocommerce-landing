@@ -1,5 +1,5 @@
-import IMGLogo from './images/logo.png'
-import IMGLogoWhite from './images/logo-white.png'
+import IMGLogo from './images/logo.svg'
+import IMGLogoWhite from './images/logo-white.svg'
 import IMGHero from './images/hero.png'
 import IMGAdvantage1 from './images/advantage1.png'
 import IMGAdvantage2 from './images/advantage2.png'

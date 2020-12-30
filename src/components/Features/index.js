@@ -19,22 +19,22 @@ import './features.css'
 const Features = () => {
   return (
     <div
-      className='container mx-auto px-32 mb-20'
+      className='container mx-auto xl:px-32 lg:px-20 px-10 mb-20'
       style={{ marginTop: '-70px' }}
     >
-      <h2 className='text-center mb-10 text-4xl font-bold font-circular'>
+      <h2 className='text-center mb-10 lg:text-4xl text-3xl font-bold font-circular'>
         Your eCommerce
         <br /> made simple
       </h2>
-      <div className='grid grid-cols-3 gap-x-12'>
+      <div className='grid md:grid-cols-3 grid-cols-1 lg:gap-x-12 md:gap-x-8 gap-x-0 md:gap-y-0 gap-y-10'>
         <div className='relative'>
           <img
             src={IMGFeature1}
-            className='shadow-xl rounded-2xl'
+            className='shadow-xl rounded-2xl w-full main-img-features'
             alt='feature1'
           />
-          <div className='mt-9'>
-            <h3 className='text-2xl font-bold font-circular mb-4'>
+          <div className='md:mt-9 sm:mt-16 mt-9'>
+            <h3 className='lg:text-2xl md:text-xl text-2xl font-bold font-circular mb-4'>
               All You Need to Start
             </h3>
             <p className='opacity-60 text-sm mb-4'>
@@ -62,11 +62,11 @@ const Features = () => {
         <div className='mt-10 relative'>
           <img
             src={IMGFeature2}
-            className='shadow-xl rounded-2xl'
+            className='shadow-xl rounded-2xl w-full main-img-features'
             alt='feature1'
           />
-          <div className='mt-9'>
-            <h3 className='text-2xl font-bold font-circular mb-4'>
+          <div className='md:mt-9 sm:mt-16 mt-9'>
+            <h3 className='lg:text-2xl md:text-xl text-2xl font-bold font-circular mb-4'>
               Customize and Extend
             </h3>
             <p className='opacity-60 text-sm mb-4'>
@@ -109,11 +109,11 @@ const Features = () => {
         <div className='mt-20 relative'>
           <img
             src={IMGFeature3}
-            className='shadow-xl rounded-2xl'
+            className='shadow-xl rounded-2xl w-full main-img-features'
             alt='feature1'
           />
           <div className='mt-9'>
-            <h3 className='text-2xl font-bold font-circular mb-4'>
+            <h3 className='lg:text-2xl md:text-xl text-2xl font-bold font-circular mb-4'>
               Active Community
             </h3>
             <p className='opacity-60 text-sm mb-4'>
