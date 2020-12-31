@@ -69,7 +69,6 @@ const Advantages = () => {
           />
         </div>
         <div className='grid grid-cols-12 relative mt-20'>
-          <div className='2xl:col-span-2 2xl:block hidden col-ghost'></div>
           <div
             className='md:col-span-6 col-span-12 ml-auto md:mr-16'
             data-aos='fade-up'
@@ -90,7 +89,7 @@ const Advantages = () => {
             </button>
           </div>
           <div
-            className='2xl:col-span-4 lg:col-span-5 col-span-6 md:block hidden z-10 relative'
+            className='2xl:col-span-4  lg:col-span-5 col-span-6 md:block hidden z-10 relative'
             data-aos='fade-down'
             data-aos-duration='1500'
           >
