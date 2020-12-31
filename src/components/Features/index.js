@@ -71,7 +71,7 @@ const Features = () => {
         <div
           className='mt-10 relative'
           data-aos='fade-up'
-          data-aos-duration='2000'
+          data-aos-duration='1500'
         >
           <img
             src={IMGFeature2}
@@ -122,7 +122,7 @@ const Features = () => {
         <div
           className='mt-20 relative'
           data-aos='fade-up'
-          data-aos-duration='3000'
+          data-aos-duration='2000'
         >
           <img
             src={IMGFeature3}

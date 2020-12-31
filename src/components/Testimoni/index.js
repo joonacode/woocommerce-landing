@@ -35,7 +35,7 @@ const Testimoni = () => {
     AOS.init()
   }, [])
   return (
-    <div className='bg-testimoni relative mt-40 pt-10 overflow-hidden'>
+    <div className='bg-testimoni relative lg:mt-30 md:mt-10 mt-36 pt-10 overflow-hidden'>
       <div className='container mx-auto px-10'>
         <h2
           className='text-center font-bold text-4xl'

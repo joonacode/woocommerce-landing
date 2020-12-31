@@ -59,7 +59,7 @@ function App() {
       )}
       <Hero />
       <Features />
-      <div className='overflow-hidden'>
+      <div className='overflow-hidden lg:pb-40 md:pb-32'>
         <Advantages />
       </div>
       <Testimoni />
