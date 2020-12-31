@@ -20,6 +20,20 @@
     top: -30px;
     width: 400px;
   }
+  .navbar-active {
+    position: sticky;
+    z-index: 48;
+    background-color: transparent;
+  }
+  .navbar-active.active {
+    top: 0;
+    background-color: white;
+    padding: 20px !important;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  }
+  .navbar-active.active .navbar-logo {
+    width: 130px;
+  }
 }
 
 @media screen and (max-width: 768px) {

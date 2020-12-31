@@ -1,8 +1,7 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import {
   IMGDotOneH,
   IMGDotTwoV,
-  IMGQuote,
   IMGUser1,
   IMGUser2,
   IMGUser3,
@@ -15,6 +14,10 @@ import './testimoni.css'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import { BsArrowRight, BsArrowLeft } from 'react-icons/bs'
+import { dataTestimoni } from './dataTestimoni'
+import TestimoniItem from '../TestimoniItem'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Testimoni = () => {
   const sliderRef = useRef(null)
@@ -28,67 +31,29 @@ const Testimoni = () => {
     slidesToScroll: 1,
     vertical: true,
   }
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
-    <div className='bg-testimoni relative mt-40 pt-10'>
+    <div className='bg-testimoni relative mt-40 pt-10 overflow-hidden'>
       <div className='container mx-auto px-10'>
-        <h2 className='text-center font-bold text-4xl'>
+        <h2
+          className='text-center font-bold text-4xl'
+          data-aos='zoom-in-up'
+          data-aos-duration='1000'
+        >
           Trusted by Agencies <br /> & Store Owners
         </h2>
-        <div className='flex item-center justify-center mt-20 relative'>
+        <div
+          className='flex item-center justify-center mt-20 relative'
+          data-aos='fade-up'
+          data-aos-duration='1500'
+        >
           <div className='slider-width relative z-10'>
             <Slider {...settings} className='' ref={sliderRef}>
-              <div className='focus:outline-none'>
-                <div className='bg-white shadow-lg relative rounded-2xl z-10  p-16'>
-                  <p className='text-center relative text-gray-400 z-50'>
-                    No other eCommerce platform allows people to start for free
-                    and grow their store as their business grows. More
-                    importantly, WooCommerce doesn't charge you a portion of
-                    your profits as your business grows!
-                  </p>
-                  <div className='absolute z-10 top-0 img-quote'>
-                    <img src={IMGQuote} className='h-40 w-40' alt='quote' />
-                  </div>
-                </div>
-              </div>
-              <div className='focus:outline-none'>
-                <div className='bg-white shadow-lg relative rounded-2xl z-10  p-16'>
-                  <p className='text-center relative text-gray-400 z-50'>
-                    No other eCommerce platform allows people to start for free
-                    and grow their store as their business grows. More
-                    importantly, WooCommerce doesn't charge you a portion of
-                    your profits as your business grows!
-                  </p>
-                  <div className='absolute z-10 top-0 img-quote'>
-                    <img src={IMGQuote} className='h-40 w-40' alt='quote' />
-                  </div>
-                </div>
-              </div>
-              <div className='focus:outline-none'>
-                <div className='bg-white shadow-lg relative rounded-2xl z-10  p-16'>
-                  <p className='text-center relative text-gray-400 z-50'>
-                    No other eCommerce platform allows people to start for free
-                    and grow their store as their business grows. More
-                    importantly, WooCommerce doesn't charge you a portion of
-                    your profits as your business grows!
-                  </p>
-                  <div className='absolute z-10 top-0 img-quote'>
-                    <img src={IMGQuote} className='h-40 w-40' alt='quote' />
-                  </div>
-                </div>
-              </div>
-              <div className='focus:outline-none'>
-                <div className='bg-white shadow-lg relative rounded-2xl z-10  p-16'>
-                  <p className='text-center relative text-gray-400 z-50'>
-                    No other eCommerce platform allows people to start for free
-                    and grow their store as their business grows. More
-                    importantly, WooCommerce doesn't charge you a portion of
-                    your profits as your business grows!
-                  </p>
-                  <div className='absolute z-10 top-0 img-quote'>
-                    <img src={IMGQuote} className='h-40 w-40' alt='quote' />
-                  </div>
-                </div>
-              </div>
+              {dataTestimoni.map((item, i) => (
+                <TestimoniItem {...item} key={i} />
+              ))}
             </Slider>
             <div className='flex items-center cus-slider-nav'>
               <span

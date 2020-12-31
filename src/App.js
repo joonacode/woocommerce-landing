@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
   Advantages,
   BeforeFooter,
@@ -26,13 +26,27 @@ function App() {
   const showSidebarSearch = () => {
     setSidebarSearch(true)
   }
+  const [scrollNav, setScrollNav] = useState(false)
+
+  const changeNav = () => {
+    if (window.scrollY >= 250) {
+      setScrollNav(true)
+    } else {
+      setScrollNav(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav)
+  }, [])
 
   return (
-    <div className='text-gray-800 overflow-hidden'>
+    <div className='text-gray-800'>
       <Navbar
         toggleSidebar={toggleSidebar}
         toggleSidebarSearch={toggleSidebarSearch}
         sidebarSearch={sidebarSearch}
+        scrollNav={scrollNav}
       />
       {sidebar && (
         <Sidebar
@@ -45,7 +59,9 @@ function App() {
       )}
       <Hero />
       <Features />
-      <Advantages />
+      <div className='overflow-hidden'>
+        <Advantages />
+      </div>
       <Testimoni />
       <BeforeFooter />
       <Footer />

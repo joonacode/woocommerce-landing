@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
   IMGFeature1,
   IMGFeature1AO,
@@ -14,20 +14,29 @@ import {
   IMGFeature3a2,
   IMGFeature3a3,
 } from '../../assets'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import './features.css'
 
 const Features = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <div
-      className='container mx-auto xl:px-32 lg:px-20 px-10 mb-20'
+      className='container mx-auto xl:px-32 lg:px-20 px-10 mb-20 overflow-hidden'
       style={{ marginTop: '-70px' }}
     >
-      <h2 className='text-center mb-10 lg:text-4xl text-3xl font-bold font-circular'>
+      <h2
+        className='text-center mb-10 lg:text-4xl text-3xl font-bold font-circular'
+        data-aos='zoom-in-up'
+        data-aos-duration='1000'
+      >
         Your eCommerce
         <br /> made simple
       </h2>
       <div className='grid md:grid-cols-3 grid-cols-1 lg:gap-x-12 md:gap-x-8 gap-x-0 md:gap-y-0 gap-y-10'>
-        <div className='relative'>
+        <div className='relative' data-aos='fade-up' data-aos-duration='1500'>
           <img
             src={IMGFeature1}
             className='shadow-xl rounded-2xl w-full main-img-features'
@@ -59,7 +68,11 @@ const Features = () => {
             alt='feature1addone'
           />
         </div>
-        <div className='mt-10 relative'>
+        <div
+          className='mt-10 relative'
+          data-aos='fade-up'
+          data-aos-duration='2000'
+        >
           <img
             src={IMGFeature2}
             className='shadow-xl rounded-2xl w-full main-img-features'
@@ -106,7 +119,11 @@ const Features = () => {
             alt='feature1'
           />
         </div>
-        <div className='mt-20 relative'>
+        <div
+          className='mt-20 relative'
+          data-aos='fade-up'
+          data-aos-duration='3000'
+        >
           <img
             src={IMGFeature3}
             className='shadow-xl rounded-2xl w-full main-img-features'
