@@ -17,7 +17,7 @@ const Advantages = () => {
             <img
               src={IMGAdvantage1}
               style={{ marginTop: '-80px' }}
-              className='shadow-2xl'
+              className='shadow-2xl rounded-2xl'
               alt='advantages1'
             />
           </div>
@@ -32,7 +32,10 @@ const Advantages = () => {
               client, or simply add a single product to a WordPress site—your
               store, your way.
             </p>
-            <button className='px-6 py-4 bg-yellow-500 text-sm font-semibold text-white rounded-full focus:outline-none'>
+            <button
+              type='button'
+              className='px-6 py-4 outline-none bg-yellow-500 hover:bg-yellow-400 text-sm font-semibold text-white rounded-full focus:outline-none'
+            >
               Read the Documentation
             </button>
           </div>
@@ -65,12 +68,16 @@ const Advantages = () => {
               online resources are frequently cited as reasons our users love
               it. There are 80+ meetups worldwide!
             </p>
-            <button className='px-6 py-4 bg-yellow-500 text-sm font-semibold text-white rounded-full focus:outline-none'>
+            <button className='px-6 py-4 bg-yellow-500 hover:bg-yellow-400 text-sm font-semibold text-white rounded-full focus:outline-none'>
               Read the Documentation
             </button>
           </div>
           <div className='2xl:col-span-4 lg:col-span-5 col-span-6 md:block hidden z-10 relative'>
-            <img src={IMGAdvantage2} className='shadow-2xl' alt='advantages1' />
+            <img
+              src={IMGAdvantage2}
+              className='shadow-2xl rounded-2xl'
+              alt='advantages1'
+            />
           </div>
           <img
             src={IMGDotTwoV}

@@ -18,12 +18,12 @@ const Hero = () => {
             <div className='flex lg:flex-row flex-col lg:items-center md:items-start items-center lg:space-x-2 lg:space-y-0 space-y-1'>
               <button
                 type='button'
-                className='focus:outline-none px-10 py-3 text-sm font-medium bg-purple-600 text-white rounded-full'
+                className='focus:outline-none hover:bg-purple-700 px-10 py-3 text-sm font-medium bg-purple-600 text-white rounded-full'
               >
                 Get a New Store
               </button>
               <span className='opacity-50'>or</span>
-              <span className='text-blue-500 font-medium'>
+              <span className='text-blue-500 font-medium cursor-pointer hover:underline'>
                 Customize & Extended{' '}
               </span>
             </div>
