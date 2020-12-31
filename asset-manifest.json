@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/woocommerce-landing/static/css/main.9737f299.chunk.css",
-    "main.js": "/woocommerce-landing/static/js/main.98ee11ad.chunk.js",
-    "main.js.map": "/woocommerce-landing/static/js/main.98ee11ad.chunk.js.map",
+    "main.css": "/woocommerce-landing/static/css/main.9652d602.chunk.css",
+    "main.js": "/woocommerce-landing/static/js/main.1283aeeb.chunk.js",
+    "main.js.map": "/woocommerce-landing/static/js/main.1283aeeb.chunk.js.map",
     "runtime-main.js": "/woocommerce-landing/static/js/runtime-main.f72f729d.js",
     "runtime-main.js.map": "/woocommerce-landing/static/js/runtime-main.f72f729d.js.map",
     "static/css/2.e68df720.chunk.css": "/woocommerce-landing/static/css/2.e68df720.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.515dbc9d.chunk.js.map": "/woocommerce-landing/static/js/3.515dbc9d.chunk.js.map",
     "index.html": "/woocommerce-landing/index.html",
     "static/css/2.e68df720.chunk.css.map": "/woocommerce-landing/static/css/2.e68df720.chunk.css.map",
-    "static/css/main.9737f299.chunk.css.map": "/woocommerce-landing/static/css/main.9737f299.chunk.css.map",
+    "static/css/main.9652d602.chunk.css.map": "/woocommerce-landing/static/css/main.9652d602.chunk.css.map",
     "static/js/2.dbc0a3f1.chunk.js.LICENSE.txt": "/woocommerce-landing/static/js/2.dbc0a3f1.chunk.js.LICENSE.txt",
     "static/media/advantage1.6896b7f9.png": "/woocommerce-landing/static/media/advantage1.6896b7f9.png",
     "static/media/advantage2.f0f95744.png": "/woocommerce-landing/static/media/advantage2.f0f95744.png",
@@ -54,7 +54,7 @@
     "static/js/runtime-main.f72f729d.js",
     "static/css/2.e68df720.chunk.css",
     "static/js/2.dbc0a3f1.chunk.js",
-    "static/css/main.9737f299.chunk.css",
-    "static/js/main.98ee11ad.chunk.js"
+    "static/css/main.9652d602.chunk.css",
+    "static/js/main.1283aeeb.chunk.js"
   ]
 }
